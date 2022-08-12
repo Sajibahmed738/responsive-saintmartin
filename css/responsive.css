@@ -1,0 +1,79 @@
+/*topbar responsive css*/
+@media screen and (max-width: 1399px){
+/*search responsive css*/
+.w-21{
+width: 20%;
+}
+}
+@media screen and (max-width: 1199px){
+/*visit place responsive css*/
+.place-text h2{
+font-size: 45px;
+}
+.place-text p{
+font-size: 14px;
+}
+
+.event-content h3{
+	font-size: 35px;
+	
+}
+
+}
+@media screen and (max-width: 991px){
+/*header responsive css*/
+.topbar-left span, .topbar-left a {
+margin-right: 10px !important;
+}
+.navbar-nav{
+text-align: center;
+}
+.navbar-nav a{
+margin-right: 0 !important;
+}
+.nav-item ul{
+left: 55%;
+top: 20px;
+}
+.book-now-btn{
+justify-content: center;
+}
+/*search responsive*/
+.w-21{
+width: 100%;
+margin-bottom: 15px;
+}
+.w-20{
+width: 25%;
+}
+/*visit place responsive css*/
+.place-text h2{
+font-size: 40px;
+
+}
+}
+@media screen and (max-width:  767px){
+/*header responsive css*/
+.topbar-left, .topbar-right{
+text-align: center !important;
+}
+/*banner responsive css*/
+.banner-content h1{
+font-size: 60px;
+font-weight: 600;
+color: white;
+}
+.banner-content p{
+font-size: 14px;
+font-weight: 400;
+color: white;
+}
+}
+@media screen and (max-width:575px ){
+	.event .owl-nav{
+		display: none;
+	}
+	.event .owl-dots{
+		display: none;
+	}
+}

@@ -1,0 +1,318 @@
+/*global css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+
+}
+ul{
+	list-style: none;
+}
+
+}
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+
+}
+
+/*header css*/
+
+header{
+	width: 100%;
+	
+}
+.topbar{
+	background-color: #eaefff;
+	padding: 14px;
+}
+.topbar-left span{
+	color: #fe5c24;
+
+}
+.topbar-left a{
+	color: #0c3e72;
+}
+.topbar-right span i{
+	color: #fe5c24;
+}
+.book-now{
+	padding: 12px 22px;
+	background-color:#fe5c24 ;
+	border: none;
+	color: white;
+	transition: 0.5s;
+}
+.book-now:hover{
+	background-color:#2493e0 ;
+	transition: 0.5s;
+}
+.nav-item{
+	position: relative;
+}
+
+.nav-item ul{
+	width: 130px;
+	background-color: #eaefff;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-left: 0;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: 0.5s;
+	position: absolute;
+	z-index: 999;
+}
+.nav-item ul li{
+	padding: 10px 15px;
+}
+.nav-item ul li a{
+	color:#0c3e72 ;
+}
+.nav-item:hover .blog-dropdown{
+	transform: scaleY(1);
+	transition: 0.5s;
+
+}
+
+.span span{
+	margin-left: 25px;
+	margin-top: 200px;
+}
+
+/*banner css*/
+
+.banner{
+	width: 100%;
+	background-image: url(../img/bg-1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100vh;
+}
+.banner-content{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.banner-content h1{
+	font-size: 120px;
+	font-weight: 600;
+	color: white;
+}
+.banner-content p{
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+}
+.banner-content button{
+	margin-top: 60px;
+	padding:23px 79px ;
+	background-color: #2493e0;
+	color: white;
+	border: none;
+	font-size: 16px;
+	transition: 0.5s;
+
+}
+.banner-content button:hover{
+	background-color:#fe5c24;
+	transition: 0.5s;
+}
+
+/*search css*/
+
+.search{
+	margin-top: -80px;
+}
+.search-box{
+	background-color: white;
+	box-shadow: 0 10px 40px 0 rgba(221,221,221,.3);
+}
+
+.tab-menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 30px 26px 0;
+
+}
+.tab-item{
+	padding: 30px;
+}
+.form-feild{
+	padding: 12px 14px;
+	
+	color: black;
+	margin-right: 12px;
+}
+.date-box{
+	position: relative;
+	margin-right: 12px;
+}
+.w-21{
+	width: 20%;
+}
+.w-2{
+	width: 100%;
+	outline: none;
+}
+.w-20{
+	width: 10%;
+}
+
+.date-box i{
+	position: absolute;
+	right: 20px;
+	top: 18px;
+
+}
+/*place css*/
+.place{
+	width: 100%;
+}
+.place-item-list img{
+	width: 100%;
+}
+.place-text h2{
+	font-size: 70px;
+	color: #0c3e72;
+	padding: 20px 0;
+}
+.place-text p{
+	font-size: 16px;
+	color: #777;
+	padding: 20px 0;
+}
+.place-item-list{
+	position: relative;
+}
+.place-item-content{
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.place-item-list::before{
+	content: '';
+	background-color: #0c3e72;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s;
+
+}
+.place-item-list:hover::before{
+	opacity: 0.65;
+	transition: 0.5s;
+}
+.place-item-list:hover .place-item-content{
+	opacity: 1;
+	transform: translateY(-20px);
+	transition: 0.5s;
+}
+
+
+/*event css start*/
+
+.event{
+	width: 100%;
+	background-image: url(../img/bg-2.png);
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.event-content{
+	background-color: white;
+	padding: 40px;
+	margin: 50px;
+}
+.event-content h5{
+	font-size: 18px;
+	font-weight: 400;
+	color:#fe5c24;
+	padding: 10px 0;
+}
+.event-content h3{
+	font-size: 45px;
+	font-weight: 600;
+	color: #0c3e72;
+	padding: 15px 0;
+}
+.event-content p{
+	padding-bottom: 15px;
+}
+.event-content span{
+	font-size: 18px;
+	font-weight: 600;
+	color: #0c3e72;
+}
+.event-content span i{
+	color: orange;
+}
+
+.hh{
+	height: 100vh;
+}
+.event .owl-prev{
+	color: white !important;
+	position: absolute;
+	left: -40px;
+	top: 40%;
+	font-size: 85px !important;
+	text-align: center;
+
+}
+.event .owl-next{
+	color: white !important;
+	position: absolute;
+	right: -40px;
+	top: 40%;
+	font-size: 85px !important;
+	text-align: center;
+
+}
+
+/* slider 2 css */
+
+.slider-2{
+	width: 100%;
+	background-color: #0c3e72;
+	padding: 100px 0;
+}
+.slider-2-content h2{
+	font-size: 65px;
+	color: white;
+	padding: 20px 0;
+}
+.slider-2 .content-box{
+	background-color:#0e477d ;
+	color: white;
+	padding: 35px;
+}
+.slider-2 .content-box span i{
+	margin-bottom: 25px;
+}
+.slider-2 .owl-nav{
+
+	color: white !important;
+	position: absolute;
+	right: 0px;
+	top: -50%;
+	font-size: 65px !important;
+	text-align: center;
+
+}
